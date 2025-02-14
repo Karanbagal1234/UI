@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { cartService } from "../services/cart.js"; // Ensure correct import
-import { useCart } from "../context/cartContext.jsx";
+import { useCart } from "../context/CartContext.jsx";
 
 const DigitalReceipt = () => {
   const [receipt, setReceipt] = useState(null);
