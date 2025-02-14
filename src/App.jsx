@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import { Bounce, ToastContainer } from "react-toastify";
-import { CartProvider } from "./context/CartContext.jsx";
+import { CartProvider } from "./context/cartContext.jsx";
 
 // Lazy-loaded pages
 const LoginPage = lazy(() => import("./pages/login.jsx"));
