@@ -2,12 +2,12 @@ import { useNavigate } from "react-router-dom";
 import QRScanner from "../components/QrScanner";
 import { cartService } from "../services/cart";
 import { notification } from "../utils/feedback";
-import { useCart } from "../context/CartContext";
 import { useState } from "react";
 import useRedirect from "../services/AuthChecker";
 import { StoreService } from "../services/store";
 import Modal from "../components/Model";
 import { useAuth } from "../context/AuthContext"; // Import useAuth to access spending limit functionality
+import { useCart } from "../context/CartContext";
 
 const ScanPage = () => {
   const { setCartId, setStore, cart, cartId, setCart } = useCart();

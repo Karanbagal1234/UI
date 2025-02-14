@@ -5,11 +5,11 @@ import Loader from "../components/Loader";
 import { StoreService } from "../services/store.js";
 import { cartService } from "../services/cart.js";
 import useRedirect from "../services/AuthChecker.js";
-import { useCart } from "../context/CartContext.jsx";
 import ChatBot from "../components/chatbot.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { motion } from "framer-motion";
 import { ShoppingCart, Scan, MessageCircle, Sun, Moon } from "lucide-react";
+import { useCart } from "../context/CartContext.jsx";
 const StorePage = () => {
   const { cartId, cart, setCart } = useCart();
   const { redirectTo } = useRedirect();
