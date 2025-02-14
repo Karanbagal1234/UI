@@ -7,4 +7,6 @@ export default defineConfig({
   define: {
     'process.env': process.env, // Ensures env variables are available
   },
+  base: '/UI/', // Change to your repo name
+
 });
