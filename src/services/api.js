@@ -4,8 +4,9 @@ console.log("Loaded ENV Variables:", import.meta.env); // Debugging
 const IP = import.meta.env.VITE_IP;
 console.log("IP from .env:", IP); // Debugging
 
+
 const api = axios.create({
-  baseURL: `https://server-j4zu.onrender.com/api/v1`,
+  baseURL: `https://${IP}/api/v1`, 
   withCredentials: true,
 });
 
